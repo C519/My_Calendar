@@ -11,7 +11,7 @@ class EventDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 76, 227, 177),
+        backgroundColor: const Color.fromARGB(255, 76, 227, 177),
         title: Text(lainn.title),
       ),
       body: Container(

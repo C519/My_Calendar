@@ -1,16 +1,14 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class ItemCard extends StatefulWidget {
-  final String namaAgenda, waktuAgenda, Survive;
+  final String namaAgenda, waktuAgenda, survive;
   final bool checkbox;
   //// Pointer to Update Function
   final Function? onUpdate;
   //// Pointer to Delete Function
   final Function? onDelete;
 
-  ItemCard(this.namaAgenda, this.waktuAgenda, this.Survive, this.checkbox,
+  ItemCard(this.namaAgenda, this.waktuAgenda, this.survive, this.checkbox,
       {this.onUpdate, this.onDelete});
 
   @override
@@ -27,7 +25,7 @@ class _ItemCardState extends State<ItemCard> {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           // border: Border.all(color: Color(0xFFdb9caf))),
-          border: Border.all(color: Color.fromARGB(255, 23, 179, 179))),
+          border: Border.all(color: const Color.fromARGB(255, 23, 179, 179))),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -38,7 +36,7 @@ class _ItemCardState extends State<ItemCard> {
                 width: MediaQuery.of(context).size.width * 0.5,
                 child: Text(
                   widget.namaAgenda,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 16,
                   ),
@@ -46,21 +44,21 @@ class _ItemCardState extends State<ItemCard> {
               ),
               Text(
                 widget.waktuAgenda,
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 16,
                 ),
               ),
               Text(
-                widget.Survive,
-                style: TextStyle(
+                widget.survive,
+                style: const TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 16,
                 ),
               ),
               Text(
                 "${widget.checkbox}",
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 16,
                 ),
@@ -74,10 +72,10 @@ class _ItemCardState extends State<ItemCard> {
                 width: 60,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      shape: CircleBorder(),
+                      shape: const CircleBorder(),
                       primary: Colors.green[900],
                     ),
-                    child: Center(
+                    child: const Center(
                         child: Icon(
                       Icons.update,
                       color: Colors.white,
@@ -91,10 +89,10 @@ class _ItemCardState extends State<ItemCard> {
                 width: 60,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      shape: CircleBorder(),
+                      shape: const CircleBorder(),
                       primary: Colors.red[900],
                     ),
-                    child: Center(
+                    child: const Center(
                         child: Icon(
                       Icons.delete,
                       color: Colors.white,

@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class Lainn {
   String title;
   String desc;
@@ -13,7 +11,7 @@ class Lainn {
       required this.tgl});
 }
 
-List<Lainn> LainnList = [
+List<Lainn> lainnList = [
 //JANUARI
 
   Lainn(

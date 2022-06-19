@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-Future<dynamic> CustomAlert(BuildContext context, String text) {
+Future<dynamic> customAlert(BuildContext context, String text) {
   return showDialog(
     barrierDismissible: false,
     context: context,
     builder: (context) {
       return AlertDialog(
-        backgroundColor: Color.fromARGB(144, 183, 183, 223),
+        backgroundColor: const Color.fromARGB(144, 183, 183, 223),
         actions: [
           Center(
             child: Column(
@@ -20,7 +20,7 @@ Future<dynamic> CustomAlert(BuildContext context, String text) {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Image.asset(
                   "assets/calenderlogo2.png",
                   height: 200,
@@ -35,7 +35,7 @@ Future<dynamic> CustomAlert(BuildContext context, String text) {
                     height: 40,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 73, 255, 173),
+                      color: const Color.fromARGB(255, 73, 255, 173),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: const Text(

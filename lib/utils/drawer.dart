@@ -31,10 +31,10 @@ class MyDrawer extends StatelessWidget {
                     Icons.home,
                     color: Colors.white,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
-                  Text(
+                  const Text(
                     'Dasboard',
                     style: TextStyle(
                         color: Colors.white,
@@ -45,28 +45,31 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
             onTap: () {
-              Navigator.pushReplacement(
-                  context, MaterialPageRoute(builder: (_) => Calendar()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Calendar(),
+                  ));
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          Divider(
+          const Divider(
             color: Colors.white,
           ),
           ListTile(
             title: Container(
               child: Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.person,
                     color: Colors.white,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
-                  Text(
+                  const Text(
                     'Profil',
                     style: TextStyle(
                         color: Colors.white,
@@ -78,27 +81,27 @@ class MyDrawer extends StatelessWidget {
             ),
             onTap: () {
               Navigator.pushReplacement(
-                  context, MaterialPageRoute(builder: (_) => Profil()));
+                  context, MaterialPageRoute(builder: (_) => const Profil()));
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          Divider(
+          const Divider(
             color: Colors.white,
           ),
           ListTile(
               title: Container(
                 child: Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.other_houses_outlined,
                       color: Colors.white,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
-                    Text(
+                    const Text(
                       'Informasi Hari Besar',
                       style: TextStyle(
                           color: Colors.white,
@@ -110,27 +113,27 @@ class MyDrawer extends StatelessWidget {
               ),
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                  return EventList();
+                  return const EventList();
                 })));
               }),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          Divider(
+          const Divider(
             color: Colors.white,
           ),
           ListTile(
             title: Container(
               child: Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.note_add,
                     color: Colors.white,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
-                  Text(
+                  const Text(
                     'Agenda',
                     style: TextStyle(
                         color: Colors.white,
@@ -142,7 +145,7 @@ class MyDrawer extends StatelessWidget {
             ),
             onTap: () {
               Navigator.pushReplacement(
-                  context, MaterialPageRoute(builder: (_) => For()));
+                  context, MaterialPageRoute(builder: (_) => const For()));
             },
           ),
         ],

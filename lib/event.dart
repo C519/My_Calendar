@@ -93,7 +93,7 @@ class _FromState extends State<For> {
     CollectionReference agenda = firestore.collection("Agenda");
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 76, 227, 177),
+        backgroundColor: const Color.fromARGB(255, 76, 227, 177),
         title: const Text("AGENDA"),
         centerTitle: true,
       ),
@@ -192,11 +192,11 @@ class _FromState extends State<For> {
 
                           hapusValue();
                         });
-                        CustomAlert(context, _myController.text);
+                        customAlert(context, _myController.text);
                       },
                       child: const Text("Tambah"),
                       style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 76, 227, 177),
+                        primary: const Color.fromARGB(255, 76, 227, 177),
                       ),
                     ),
                   ),

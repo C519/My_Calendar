@@ -60,6 +60,16 @@ class _RegisPageState extends State<RegisPage> {
                 reusableTextField("Masukkan Kata Sandi ", Icons.lock, true,
                     _passwordTextController),
                 const SizedBox(
+                  height: 10,
+                ),
+                const Text(
+                  'Kata sandi harus terdiri dari 6 huruf',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 11),
+                ),
+                const SizedBox(
                   height: 20,
                 ),
                 loginUIButton(context, "DAFTAR", () async {
@@ -75,7 +85,8 @@ class _RegisPageState extends State<RegisPage> {
                     ));
                   } on FirebaseAuthException {
                     Fluttertoast.showToast(
-                        msg: "GAGAL DAFTAR ", gravity: ToastGravity.TOP);
+                        msg: " Masukkan email dan password yang benar ",
+                        gravity: ToastGravity.TOP);
                   }
                 }),
               ],

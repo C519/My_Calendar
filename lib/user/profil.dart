@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:tes_android/user/login_page.dart';
 import 'package:tes_android/utils/color_utils.dart';
 import 'package:tes_android/utils/drawer.dart';
@@ -41,7 +42,8 @@ class _ProfilState extends State<Profil> {
               child: const Text("Keluar"),
               onPressed: () {
                 FirebaseAuth.instance.signOut().then((value) {
-                  debugPrint("telah keluar ");
+                  Fluttertoast.showToast(
+                      msg: "Berhasil Keluar", gravity: ToastGravity.TOP);
                   Navigator.push(
                       context,
                       MaterialPageRoute(

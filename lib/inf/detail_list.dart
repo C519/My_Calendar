@@ -13,9 +13,9 @@ class EventList extends StatelessWidget {
         title: const Text(' Informasi Hari Besar '),
       ),
       body: ListView.builder(
-        itemCount: LainnList.length,
+        itemCount: lainnList.length,
         itemBuilder: (context, index) {
-          Lainn lainn = LainnList[index];
+          Lainn lainn = lainnList[index];
           return Card(
             child: ListTile(
               tileColor: const Color.fromARGB(255, 0, 255, 171),
