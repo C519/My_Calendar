@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "664328643381",
+    "project_id": "kalender1-15c57",
+    "storage_bucket": "kalender1-15c57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664328643381:android:b666da9294c8525d1e227c",
+        "android_client_info": {
+          "package_name": "com.example.tes_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664328643381-a55ni9em71gjuq5lgkrftvaunef963lv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRkmcUeyCXx0nLS-TXK6dBpjd7QsaGPdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664328643381-a55ni9em71gjuq5lgkrftvaunef963lv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
