@@ -87,7 +87,7 @@ Row signUpOption(BuildContext context) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
-      const Text("Tidak Punya Aun ?",
+      const Text("Tidak Punya Akun ?",
           style: TextStyle(color: Colors.white70, fontWeight: FontWeight.bold)),
       GestureDetector(
         onTap: () {
